@@ -3,7 +3,6 @@ import Phonebook from './components/Phonebook/Phonebook';
 import Contacts from './components/Contacts/Contacts';
 import Filter from './components/Filter/Filter';
 import shortid from 'shortid';
-import PropTypes from 'prop-types';
 import s from './App.module.scss';
 class App extends React.Component {
   state = {
@@ -15,11 +14,6 @@ class App extends React.Component {
     ],
 
     filter: '',
-  };
-
-  static propTypes = {
-    name: PropTypes.string,
-    number: PropTypes.string,
   };
 
   addContact = ({ name, number }) => {

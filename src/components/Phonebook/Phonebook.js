@@ -10,8 +10,6 @@ class Phonebook extends React.Component {
   };
 
   static propTypes = {
-    value: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
     onSubmit: PropTypes.func.isRequired,
   };
   contactId = shortid.generate();
